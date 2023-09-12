@@ -32,7 +32,7 @@ export default function HomePage() {
   const HandleJoinEvent = useCallback(() => {
     // props.nameEntry1(start)
     // start = true
-    navigate(`/room/${Text}/${randomID(10)}/Host`)
+    navigate(`/room/${Text}/${randomID(9)}/Host`)
     // navigate(`/room/${Text}/${value}`)
   }, [navigate])
 
