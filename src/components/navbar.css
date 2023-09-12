@@ -1,0 +1,53 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #101c38;
+    padding: 0 0.5cm;
+    z-index: 999;
+}
+.logo{
+    border-radius: 50%;
+    background: url('../Images/logo-social2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1.6cm;
+    height: 1.6cm;
+}
+.webname{
+    font-size: 22px;
+}
+.logocontainer{
+    color: #e8eaee;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.userlogo{
+    display: flex;
+    width: 4.5cm;
+    justify-content: space-between;
+    align-items: center;
+    color: #e8eaee;
+}
+.userimg{
+    border:2px solid white;
+    box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.589);
+    border-radius: 50%;
+    background: url('../Images/user.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+.nav-pages{
+    display: flex;
+    gap: 1cm;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+}
+.nav-pages li:hover{
+    text-decoration:underline #f43131 3px;
+}
+
