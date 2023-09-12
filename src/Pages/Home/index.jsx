@@ -3,7 +3,7 @@ import './style.css'
 import NavBar from '../../components/NavBar';
 import SideBar from '../../components/SideBar';
 import { useNavigate } from 'react-router-dom'
-export default function HomePage(props) {
+export default function HomePage() {
 
   // let start = false;
 
