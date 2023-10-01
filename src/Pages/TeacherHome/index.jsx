@@ -1,30 +1,31 @@
-import React, { useCallback } from 'react'
+// import React, { useCallback } from 'react'
+import React from 'react'
 import './style.css'
 import NavBar from '../../components/NavBar';
 import SideBar from '../../components/SideBar';
-import { useNavigate } from 'react-router-dom'
+// import { useNavigate } from 'react-router-dom'
 export default function HomePage() {
 
-  function randomID(len) {
-    let result = '';
-    if (result) return result;
-    var chars = '1234567890',
-      maxPos = chars.length,
-      i;
-    len = len || 5;
-    for (i = 0; i < len; i++) {
-      result += chars.charAt(Math.floor(Math.random() * maxPos));
-    }
-    return result;
-  }
+  // function randomID(len) {
+  //   let result = '';
+  //   if (result) return result;
+  //   var chars = '1234567890',
+  //     maxPos = chars.length,
+  //     i;
+  //   len = len || 5;
+  //   for (i = 0; i < len; i++) {
+  //     result += chars.charAt(Math.floor(Math.random() * maxPos));
+  //   }
+  //   return result;
+  // }
 
-  const navigate = useNavigate()
+  // const navigate = useNavigate()
 
 
-  const Text = "Kharvesh"
-  const HandleJoinEvent = useCallback(() => {
-    navigate(`/room/${Text}/${randomID(9)}/Host`)
-  }, [navigate])
+  // const Text = "Kharvesh"
+  // const HandleJoinEvent = useCallback(() => {
+  //   navigate(`/room/${Text}/${randomID(9)}/Host`)
+  // }, [navigate])
 
 
   return (
