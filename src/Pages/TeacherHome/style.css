@@ -1,0 +1,56 @@
+.home-container{
+    margin-left: 18vw;
+}
+.Create-Class-Form{
+    display: grid;
+    margin-left: 4cm;
+    grid-template-columns: auto;
+}
+.form-lable{
+    color: #bbbbbb;
+    font-size: 18px;
+}
+.form-data-selector{
+    width: 9cm;
+    height: 0.9cm;
+    padding-inline-start: 0.1cm;
+    border-radius: 10px;
+    background-color: #1b243b;
+    outline: none;
+    border: 1px solid #7d7d7d;
+    color: #e8eaee;
+}
+.form-data-selector-datetime{
+    width: 4cm;
+    height: 0.9cm;
+    padding-inline-start: 0.1cm;
+    border-radius: 10px;
+    background-color: #1b243b;
+    outline: none;
+    border: 1px solid #7d7d7d;
+    color: #e8eaee;
+}
+.form-button{
+    width: 3cm;
+    height: 1cm;
+    margin-top: 1.5cm;
+    margin-left: 1cm;
+    color: white;
+    background-color: #f83131;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+.form-button:active{
+    background-color: #ff4e4e;
+}
+.form-img{
+    background-image: url("../../Images/focused-tiny-people-reading-books_74855-5836-removebg-preview.png");
+    width: 10cm;
+    height: 10cm;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 2cm;
+    top: 3cm;
+}

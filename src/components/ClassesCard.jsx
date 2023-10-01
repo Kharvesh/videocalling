@@ -1,6 +1,6 @@
 import React ,{useCallback} from 'react'
 import {useNavigate} from 'react-router-dom'
-import "./StudentHome.css"
+import "./ClassesCard.css"
 import physics from "../Images/physics.avif"
 import maths from "../Images/maths.avif"
 import chemistry from "../Images/chemistry.avif"

@@ -1,37 +1,39 @@
 .roomcard img{
-    width: 6cm;   
-    height: 5cm;
+    width: 5.5cm;   
+    height: 4.6cm;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom: 1px solid rgba(189, 189, 189, 0.5);
 }
 .roomcard{
     /* border: 1px solid black; */
-    box-shadow: 0 0 7px rgb(189, 189, 189);
+    box-shadow: 0 0 7px #000000;
     margin-top: 1cm;
     border-radius: 10px;
     height: 7cm;
-    width: 6cm;
+    width: 5.5cm;
     cursor: pointer;
-    background-color: whitesmoke;
+    background-color: #0e182e;
 }
 .roomcard-title{
     display: flex;
-    font-size: large;
+    font-size: medium;
     font-weight: bolder;
-    color: black;
-    margin-top: 0.5cm;
-    justify-content: space-around;
-    gap: 1cm;
-
+    color: white;
+    margin-top: 0.7cm;
+    margin-left: 0.4cm;
+    justify-content: left;
+    
 }
 .roomcard-title div{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -1cm;
+    margin-top: -1.3cm;
+    position: absolute;
     background-color: #f43131;
     width: 1cm;
+    margin-left: 4cm;
     height: 1cm;
     color: white;
     border-radius: 50%;

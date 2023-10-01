@@ -1,8 +1,6 @@
 import './App.css';
 import {Routes , Route} from 'react-router-dom';
-// import Test1 from './Pages/Home/Test1';
-import HomePage from './Pages/Home';
-// import RoomPageStudent from './Pages/Room/student';
+import HomePage from './Pages/TeacherHome';
 import StuHome from './Pages/StrudentHome';
 import RoomPageTeacher from './Pages/Room';
 import React from 'react';
