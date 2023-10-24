@@ -1,31 +1,25 @@
-// import React, { useCallback } from 'react'
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './style.css'
+import { Link } from 'react-router-dom';
 import NavBar from '../../components/NavBar';
 import SideBar from '../../components/SideBar';
 // import { useNavigate } from 'react-router-dom'
 export default function HomePage() {
 
-  // function randomID(len) {
-  //   let result = '';
-  //   if (result) return result;
-  //   var chars = '1234567890',
-  //     maxPos = chars.length,
-  //     i;
-  //   len = len || 5;
-  //   for (i = 0; i < len; i++) {
-  //     result += chars.charAt(Math.floor(Math.random() * maxPos));
-  //   }
-  //   return result;
-  // }
+  const[record , setrecord] = useState([]);
 
-  // const navigate = useNavigate()
+  useEffect(()=>{
+      const getUserdata = async()=>{
+          const reqData = await fetch("https://video5743call.000webhostapp.com/Classroom.php");
+          const resData = await reqData.json();
+          setrecord(resData);
 
+      }
+      getUserdata();
 
-  // const Text = "Kharvesh"
-  // const HandleJoinEvent = useCallback(() => {
-  //   navigate(`/room/${Text}/${randomID(9)}/Host`)
-  // }, [navigate])
+  },[]);    
+
+  let live=record.length
 
 
   return (
@@ -33,61 +27,55 @@ export default function HomePage() {
 
       <NavBar />
       <SideBar />
-      <div className='home-container'>
 
-        <h1 style={{color:"white"}}>Create Meeting</h1>
+      <div style={{display:"grid",gridTemplateColumns:"8.5cm 8.5cm 8.5cm 8.5cm",marginLeft:"3vw"}}>
 
-        <div className='Create-Class-Form'>
 
-          <div style={{gridColumn:"1/3"}}>
-            <p className='form-lable'>Class:</p>
-            <select name="" className='form-data-selector'>
-              <option value="1" selected>1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-              <option value="11">11</option>
-              <option value="12">12</option>
-            </select>
-          </div>
-          <div style={{gridColumn:"1/3"}}>
-            <p className='form-lable'>Subject:</p>
-            <select name="" className='form-data-selector'>
-              <option value="science" selected>Science</option>
-              <option value="maths">Maths</option>
-              <option value="eng">English</option>
-              <option value="hindi">Hindi</option>
-              <option value="ssc">Social science</option>
-              <option value="it">IT</option>
-            </select>
-          </div>
-          <div style={{gridColumn:"1/2"}}>
-            <p className='form-lable'>Time:</p>
-            <input type="time" className='form-data-selector-datetime' />
-          </div>
-          <div style={{gridColumn:"2/30"}}>
-            <p className='form-lable'>Date:</p>
-            <input type="date" className='form-data-selector-datetime' />
-          </div>
 
-          
+      <Link to='/teacher/live class' style={{textDecoration:"none"}}>
+        <div className="home-card">
+          <h3>Live classes</h3>
+          <div className="class-img card-img"><i class="fa-solid fa-chalkboard-user"></i></div>
+          <p style={{fontSize:"30px",marginTop:"-1cm",marginLeft:"0.3cm",color:"#f83131"}}>{live}</p>
+        </div>
+        </Link>
+
+
+        <div className="home-card">
+          <h3>Assignments</h3>
+          <div className="assignment-img card-img"><i class="fa-solid fa-file-pen"></i></div>
+          <p style={{fontSize:"30px",marginTop:"-1cm",marginLeft:"0.3cm",color:"#f83131"}}>0</p>
         </div>
 
-        <button style={{marginLeft:"5cm"}} className='form-button'>Join</button>
-        <button className='form-button'>Create</button>
 
-        <div className='form-img'></div>
+        <div className="home-card">
+          <h3>Doubts</h3>
+          <div className="doubt-img card-img"><i class="fa-solid fa-comments"></i></div>
+          <p style={{fontSize:"30px",marginTop:"-1cm",marginLeft:"0.3cm",color:"#f83131"}}>0</p>
+        </div>
 
 
+        <div className="home-card">
+          <h3>Examination</h3>
+          <div className="exam-img card-img"><i class="fa-regular fa-file-lines"></i></div>
+          <p style={{fontSize:"30px",marginTop:"-1cm",marginLeft:"0.3cm",color:"#f83131"}}>0</p>
+        </div>
 
 
+        <div className="home-card">
+          <h3>Homework</h3>
+          <div className="hw-img card-img"><i class="fa-solid fa-book"></i></div>
+          <p style={{fontSize:"30px",marginTop:"-1cm",marginLeft:"0.3cm",color:"#f83131"}}>0</p>
+        </div>
       </div>
+     
+
+          
+
+
+
+
+      
     </>
   )
 }

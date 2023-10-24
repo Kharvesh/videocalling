@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import StudentHome from '../../components/ClassesCard';
+import { Link } from 'react-router-dom';
 import NavBar from '../../components/NavBar';
 import SideBar from '../../components/SideBar';
 
@@ -18,25 +18,60 @@ export default function StuHome() {
 
     },[]);    
 
-    console.log(record.length)
+    let live=record.length
 
   return (
     <div>
       <NavBar/>
       <SideBar/>
-      <div style={{marginTop:"0.1cm",height:"87%", overflowX:"auto",width:"100%"}}>
-      
-        <div style={{display:"grid",gridTemplateColumns:'7cm 7cm 7cm 7cm',marginLeft:'18vw'}}>
-        
-          {record.map((element,index)=>(
-            <div key={index}>
-              <StudentHome sub={element.subject} roomid = {element.roomid} title={element.teacher}/>
-            </div>
-            ))
-          }
+
+      <div style={{display:"grid",gridTemplateColumns:"8.5cm 8.5cm 8.5cm 8.5cm",marginLeft:"3vw"}}>
+
+
+        <Link to='/student/live class' style={{textDecoration:"none"}}>
+        <div className="home-card">
+          <h3>Live classes</h3>
+          <div className="class-img card-img"><i class="fa-solid fa-chalkboard-user"></i></div>
+          <p style={{fontSize:"30px",marginTop:"-1cm",marginLeft:"0.3cm",color:"#f83131"}}>{live}</p>
+        </div>
+        </Link>
+
+        <div className="home-card">
+          <h3>Recorded classes</h3>
+          <div className="rec-img card-img"><i class="fa-solid fa-file-video"></i></div>
+          <p style={{fontSize:"30px",marginTop:"-1cm",marginLeft:"0.3cm",color:"#f83131"}}>0</p>
+        </div>
+
+
+        <div className="home-card">
+          <h3>Assignments</h3>
+          <div className="assignment-img card-img"><i class="fa-solid fa-file-pen"></i></div>
+          <p style={{fontSize:"30px",marginTop:"-1cm",marginLeft:"0.3cm",color:"#f83131"}}>0</p>
+        </div>
+
+
+        <div className="home-card">
+          <h3>Doubts</h3>
+          <div className="doubt-img card-img"><i class="fa-solid fa-comments"></i></div>
+          <p style={{fontSize:"30px",marginTop:"-1cm",marginLeft:"0.3cm",color:"#f83131"}}>0</p>
+        </div>
+
+
+        <div className="home-card">
+          <h3>Examination</h3>
+          <div className="exam-img card-img"><i class="fa-regular fa-file-lines"></i></div>
+          <p style={{fontSize:"30px",marginTop:"-1cm",marginLeft:"0.3cm",color:"#f83131"}}>0</p>
+        </div>
+
+
+        <div className="home-card">
+          <h3>Homework</h3>
+          <div className="hw-img card-img"><i class="fa-solid fa-book"></i></div>
+          <p style={{fontSize:"30px",marginTop:"-1cm",marginLeft:"0.3cm",color:"#f83131"}}>0</p>
+        </div>
       </div>
-          <button type="button" style={{color:"white", width:"3cm",height:"1.2cm",backgroundColor:"#FF4E4E",border:"none",borderRadius:"5px",marginLeft:"45%",marginTop:"1cm",cursor:"pointer"}}>More</button>
-      </div>
+     
+     
     </div>
   )
 }

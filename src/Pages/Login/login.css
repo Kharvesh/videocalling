@@ -1,0 +1,69 @@
+.login-logo{
+    background:url(../../Images/adukator-logo.png);
+    width: 2cm;
+    height: 2cm;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0.2cm;
+}
+.login-heading{
+    color: #f83131;
+    position: absolute;
+    top: 0.2cm;
+    font-size: 40px;
+    margin-left: 35%;
+
+}
+.login-body{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 1cm;
+}
+.login-img{
+    background:url(../../Images/focused-tiny-people-reading-books_74855-5836-removebg-preview.png);
+    width: 15cm;
+    height: 12cm;
+    margin-left: 2cm;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.login-form{
+    width: 11.3cm;
+    height: 12cm;
+    padding-top: 0.5cm;
+    padding-left: 1cm;
+    margin-left: 3cm;
+    border-radius: 5px;
+    color: #e8eaee;
+    background-color: #0C1427;
+}
+.login-form input[type = text]{
+    width: 10cm;
+    border: 1px solid #8B8B8B;
+    background-color: #11192B;
+    color: #e8eaee;
+    outline: none;
+    border-radius: 5px;
+    height: 1cm;
+}
+#remember{
+    margin-top: 0.5cm;
+}
+.loginbut{
+    width: 10cm;
+    height: 1cm;
+    background-color: #f83131;
+    border: 1px solid #f83131;
+    border-radius: 5px;
+    color: #e8eaee;
+    font-size: large;
+    margin-top: 1cm;
+
+}
+.loginbut:hover{
+    background-color: #f83131ce;
+    border: 1px solid #f83131ce;
+}

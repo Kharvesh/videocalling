@@ -1,0 +1,36 @@
+.addclassbut{
+    width: 3cm;
+    height: 1cm;
+    margin-left: 2cm;
+    margin-top: 1.5cm;
+    background-color: #f43131;
+    border: 1px solid #f43131;
+    border-radius: 5px;
+    color: #e8eaee;
+    font-weight: bold;
+}
+.addclassbut:hover{
+    /* filter: brightness(0.9); */
+    background-color: #cc3434e5;
+    border-color: #cc3434e5;
+}
+table,th,tr,td{
+    /* border: 1px solid #f43131; */
+    color: #e8eaee;
+    padding-left: 0.5cm;
+    border-collapse: collapse;
+    background-color: #0f1c3a;
+    height: 1.5cm;
+}
+th{
+    background-color: #09142c;
+    text-align: start;
+}
+table{
+    margin-left: 2cm;
+    margin-top: 1cm;
+    
+}
+.actionbut:hover{
+    opacity: 0.8;
+}

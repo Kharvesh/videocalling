@@ -1,8 +1,10 @@
 import { useNavigate ,Link} from "react-router-dom"
 import React,{useCallback} from 'react'
+import { useParams } from 'react-router-dom';
 import './navbar.css'
 
 export default function NavBar() {
+  const page = "dashboard" 
 
     const navigate = useNavigate()
 
@@ -13,25 +15,17 @@ export default function NavBar() {
 
   return (
     <div className="navbar">
-      <Link to='/teacher' style={{textDecoration:"none"}}>
+      <Link to='/teacher/dashboard' style={{textDecoration:"none"}}>
         <div className="logocontainer" onClick={MeetingEvent}>
             <div className='logo'></div>
           <h2 className='webname'><span style={{color:"#f43131"}}>Adu</span>Kator</h2>
         </div>
       </Link>
-
-      {/* <div className="pages">
-        <ul type="none" style={{color:"white",display:"flex", gap:"3vw",fontWeight:"400",marginLeft:"12cm", cursor:"pointer"}}>
-          <li style={{color:"#FF4E4E"}}>Home</li>
-          <li> Classes</li>
-          <li> Homework</li>
-          <li> Doubt</li>
-          <li> Contact Us</li>
-        </ul>
-      </div> */}
-
+      <h3 style={{marginLeft:"0cm",color:"#e8eaee",textTransform:"capitalize",fontWeight:"100"}}>{page}</h3>
+      
+        <div style={{marginLeft:"21.5cm",color:"#e8eaee",textTransform:"capitalize",fontWeight:"100",cursor:"pointer"}}><i class="fa-solid fa-message"></i> Notification</div>
         <div className="userlogo">
-          <h3 className="username" ><span style={{color:'#f43131'}}>Hi, </span>{Text}&nbsp;&nbsp;</h3> 
+          <h4 className="username" ><span style={{color:'#f43131'}}>Hi, </span>{Text}&nbsp;&nbsp;</h4> 
           <div className="userimg"></div>
         </div>
       </div>

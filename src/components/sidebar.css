@@ -1,6 +1,6 @@
 .sidebar{
-    height: 90vh;
-    width: 15vw;
+    height: 91vh;
+    width: 4.5vw;
     position: fixed;
     z-index: 999;
     display: flex;
@@ -8,26 +8,36 @@
     align-items: center;
     background-color: #101c38;
     box-shadow:  2px 0px 2px #0A1122 ;
+    transition: all 0.3s;
+    transition-delay: 0.1s;
 }
+#display{
+    transition: all 0.3s ease-in;
+    font-size: 0px;
+}
+
 .sidebar div{
     display: grid;
     grid-template-columns: 20% 80%;
     padding-left: 1vw;
     margin-top: 1vh;
-    padding-top: 2vh;
+    /* padding-top: 1.8vh; */
     /* border: 2px solid black; */
-    border-radius: 10px;
-    /* align-items: center; */
-    font-size: 18px;
-
-    width: 13vw;
-    height: 6vh;
+    border-radius: 7px;
+    align-items: center;
+    font-size: 17px;
+    
+    width: 2.5vw;
+    height: 7vh;
     cursor: pointer;
     color: #e8eaee;
+    transition: all 0.3s;
+    transition-delay: 0.1s;
+
 }
 .sidebar .selected{
-    background-color: #f43131;
-    box-shadow: 0px 3px 1px #f431317e;
+    background-color: #ff3b3bea;
+    /* box-shadow: 0px 3px 1px #f431317e; */
 }
 .sidebar div:hover{
     background-color: #f43131c9;
@@ -36,15 +46,23 @@
     box-shadow: none;
     background-color: #101c38;
 }
+
+.sidebar:hover{
+    width: 13vw;
+}
+.sidebar:hover div{
+    width: 11vw;
+}
+.sidebar:hover #display{
+    font-size: 17px;
+}
+
 #logout{
-    width: fit-content;
-    height: fit-content;
     padding: 0;
     border-radius: 0;
-    margin-top: 35vh;
-    margin-left: 8vw;
-    font-size: 25px;
+    margin-top: 30vh;
+    font-size: 22px;
 }
 #logout:hover{
-    background-color: #101c38;
+    background-color:#101c38;
 }
