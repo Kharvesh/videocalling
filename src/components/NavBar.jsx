@@ -1,6 +1,5 @@
 import { useNavigate ,Link} from "react-router-dom"
 import React,{useCallback} from 'react'
-import { useParams } from 'react-router-dom';
 import './navbar.css'
 
 export default function NavBar() {
