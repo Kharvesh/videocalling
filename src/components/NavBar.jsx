@@ -22,7 +22,7 @@ export default function NavBar() {
       </Link>
       <h3 style={{marginLeft:"0cm",color:"#e8eaee",textTransform:"capitalize",fontWeight:"100"}}>{page}</h3>
       
-        <div style={{marginLeft:"21.5cm",color:"#e8eaee",textTransform:"capitalize",fontWeight:"100",cursor:"pointer"}}><i class="fa-solid fa-message"></i> Notification</div>
+        <div style={{marginLeft:"21.5cm",color:"#e8eaee",textTransform:"capitalize",fontWeight:"100",cursor:"pointer"}}><i className="fa-solid fa-message"></i> Notification</div>
         <div className="userlogo">
           <h4 className="username" ><span style={{color:'#f43131'}}>Hi, </span>{Text}&nbsp;&nbsp;</h4> 
           <div className="userimg"></div>

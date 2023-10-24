@@ -23,7 +23,7 @@ export default function TeachLiveclass() {
     <NavBar/>
     <SideBar/>
     <div style={{marginLeft:"5vw"}}>
-      <button className='addclassbut'><i class="fa-solid fa-plus"></i> Add Class</button>
+      <button className='addclassbut'><i className="fa-solid fa-plus"></i> Add Class</button>
       <div>
         
       </div>
@@ -39,7 +39,7 @@ export default function TeachLiveclass() {
           <th style={{width:"3cm"}}>Action</th>
         </tr>
       {record.map((element,index)=>(
-        <tr>
+        <tr key={index}>
           <td>{index+1}</td>
           <td>02-10-23</td>
           <td>10:20AM - 11:20AM</td>
@@ -48,9 +48,9 @@ export default function TeachLiveclass() {
           <td>11 PCM</td>
           <td>{element.teacher}</td>
           <td>
-            <button className='actionbut' style={{width:"1cm",height:"1cm",color:"white",backgroundColor:"#327e45",border:"1px solid #327e45",borderRadius:"4px",fontSize:"18px"}}><i class="fa-solid fa-arrow-up-right-from-square"></i></button> 
+            <button className='actionbut' style={{width:"1cm",height:"1cm",color:"white",backgroundColor:"#327e45",border:"1px solid #327e45",borderRadius:"4px",fontSize:"18px"}}><i className="fa-solid fa-arrow-up-right-from-square"></i></button> 
           
-            <button className='actionbut' style={{width:"1cm",height:"1cm",color:"white",backgroundColor:"#f43131",border:"1px solid #f43131",borderRadius:"4px",marginLeft:"0.1cm"}}><i class="fa-solid fa-trash"></i></button>
+            <button className='actionbut' style={{width:"1cm",height:"1cm",color:"white",backgroundColor:"#f43131",border:"1px solid #f43131",borderRadius:"4px",marginLeft:"0.1cm"}}><i className="fa-solid fa-trash"></i></button>
           
           </td>
         </tr>

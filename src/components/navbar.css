@@ -34,7 +34,7 @@
 .userlogo{
     display: flex;
     width: 4cm;
-    justify-content: end;
+    justify-content: flex-end;
     height: 1cm;
     border-left: 2px solid #697080;
     align-items: center;
