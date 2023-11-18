@@ -10,10 +10,10 @@ export default function Login() {
 
   const HandleSubmitEvent = useCallback(()=>{
     console.log(userval,passval)
-    if(userval=="teacher@adukator.com" && passval=='123'){
+    if(userval==="teacher@adukator.com" && passval==='123'){
       navigate(`/teacher/dashboard`);
     }
-    else if(userval=="student@adukator.com" && passval=='123'){
+    else if(userval==="student@adukator.com" && passval==='123'){
       navigate(`/student/dashboard`);
     }
     else{
