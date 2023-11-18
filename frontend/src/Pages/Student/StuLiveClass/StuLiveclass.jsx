@@ -11,7 +11,7 @@ export default function StuLiveclass() {
 
   useEffect(()=>{
       const getUserdata = async()=>{
-          const reqData = await fetch("http://localhost:8081/classroom");
+          const reqData = await fetch("https://adukator.onrender.com/classroom");
           const resData = await reqData.json();
           setrecord(resData);
 
