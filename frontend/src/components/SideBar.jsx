@@ -16,7 +16,9 @@ export default function SideBar() {
         <div className='homework notselected' id='homework'><i className="fa-solid fa-sheet-plastic"></i><span id="display"> Assignment</span></div>
         <div className='doubt notselected' id='doubt'><i className="fa-solid fa-comment-dots"></i><span id="display"> Doubt</span></div>
         <div className='contact notselected' id='contact'><i className="fa-solid fa-headset"></i><span id="display"> Contact Us</span></div>
-        <div className='logout notselected' id='logout'><i className="fa-solid fa-right-from-bracket"></i><span id="display"> Logout  </span></div>
+        <Link to={"/"} style={{textDecoration:"none"}}>
+          <div className='logout notselected' id='logout'><i className="fa-solid fa-right-from-bracket"></i><span id="display"> Logout  </span></div>
+        </Link>
     </div>
     
   )
