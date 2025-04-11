@@ -20,14 +20,6 @@ app.get('/classroom', (req,res)=>{
     })
 })
 
-app.get('/achedmics', (req,res)=>{
-    const sql = "SELECT * FROM achedemics_file";
-    db.query(sql,(err,data)=>{
-        if(err) return res.json(err)
-        return res.json(data);
-    })
-})
-
 app.get('/', (re,res)=>{
     return res.json("From backend side");
 
